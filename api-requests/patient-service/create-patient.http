@@ -1,0 +1,15 @@
+### POST request to create a new patient
+##POST http://localhost:4000/patients
+POST http://lb-beebfcf7.elb.localhost.localstack.cloud:4004/api/patients
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "Sandul Tharuna kafka",
+    "email": "sandul.tharuna.kafka@gmail.com",
+    "address": "123 main street",
+    "dateOfBirth": "2005-03-28",
+    "registeredDate": "2025-04-25"
+}
+
+###
